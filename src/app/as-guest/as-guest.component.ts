@@ -1,6 +1,8 @@
-//import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+
 import {
-  Component,
+  //Component,
   ChangeDetectionStrategy,
   ViewChild,
   TemplateRef,
@@ -38,16 +40,20 @@ const colors: any = {
     secondary: '#FDF1BA',
   },
 };
-@Component({
-  selector: 'app-root',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+@Component({
+  selector: 'app-as-guest',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+   templateUrl: './as-guest.component.html',
+  styleUrls: ['./as-guest.component.scss']
+
 })
-export class AppComponent {
-  title = 'hellos';
-    @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
+export class AsGuestComponent implements OnInit {
+
+
+ngOnInit(): void {};
+  
+  @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
 
   view: CalendarView = CalendarView.Month;
 
@@ -84,7 +90,7 @@ export class AppComponent {
     {
       start: subDays(startOfDay(new Date()), 1),
       end: addDays(new Date(), 1),
-      title: 'A 3 day event',
+      title: 'Algorithms',
       color: colors.red,
       actions: this.actions,
       allDay: true,
@@ -96,14 +102,14 @@ export class AppComponent {
     },
     {
       start: startOfDay(new Date()),
-      title: 'An event with no end date',
+      title: 'Data Structures',
       color: colors.yellow,
       actions: this.actions,
     },
     {
       start: subDays(endOfMonth(new Date()), 3),
       end: addDays(endOfMonth(new Date()), 3),
-      title: 'A long event that spans 2 months',
+      title: 'Programming',
       color: colors.blue,
       allDay: true,
     },
@@ -190,9 +196,7 @@ export class AppComponent {
   closeOpenMonthViewDay() {
     this.activeDayIsOpen = false;
   }
-
- goToCalendar(cal: string){
-   window.open(cal);
- }
-  
 }
+
+
+
