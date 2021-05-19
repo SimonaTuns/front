@@ -1,6 +1,8 @@
-//import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+
 import {
-  Component,
+  //Component,
   ChangeDetectionStrategy,
   ViewChild,
   TemplateRef,
@@ -26,28 +28,30 @@ import {
 
 const colors: any = {
   red: {
-    primary: '#6a040f',
-    secondary: '#9d0208',
+    primary: '#ad2121',
+    secondary: '#FAE3E3',
   },
   blue: {
-    primary: '#219ebc',
-    secondary: '#023047',
+    primary: '#1e90ff',
+    secondary: '#D1E8FF',
   },
   yellow: {
-    primary: '#f48c06',
-    secondary: '#ffb703',
+    primary: '#e3bc08',
+    secondary: '#FDF1BA',
   },
 };
-@Component({
-  selector: 'app-root',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+
+@Component({
+  selector: 'app-as-admin',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './as-admin.component.html',
+  styleUrls: ['./as-admin.component.scss']
 })
-export class AppComponent {
-  title = 'hellos';
-    @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
+export class AsAdminComponent implements OnInit {
+ngOnInit(): void {};
+  
+  @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
 
   view: CalendarView = CalendarView.Month;
 
@@ -84,7 +88,7 @@ export class AppComponent {
     {
       start: subDays(startOfDay(new Date()), 1),
       end: addDays(new Date(), 1),
-      title: 'A 3 day event',
+      title: 'Algorithms',
       color: colors.red,
       actions: this.actions,
       allDay: true,
@@ -96,14 +100,14 @@ export class AppComponent {
     },
     {
       start: startOfDay(new Date()),
-      title: 'An event with no end date',
+      title: 'Data Structures',
       color: colors.yellow,
       actions: this.actions,
     },
     {
       start: subDays(endOfMonth(new Date()), 3),
       end: addDays(endOfMonth(new Date()), 3),
-      title: 'A long event that spans 2 months',
+      title: 'Programming',
       color: colors.blue,
       allDay: true,
     },
@@ -191,8 +195,4 @@ export class AppComponent {
     this.activeDayIsOpen = false;
   }
 
- goToCalendar(cal: string){
-   window.open(cal);
- }
-  
 }

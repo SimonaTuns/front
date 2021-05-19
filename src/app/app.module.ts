@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlatpickrModule } from 'angularx-flatpickr';
+import { AsAdminComponent } from './as-admin/as-admin.component';
 
 //import { NgbModal } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
 
@@ -20,7 +21,8 @@ import { FlatpickrModule } from 'angularx-flatpickr';
   declarations: [
     AppComponent,
     CalendarComponent,
-    routingComponents
+    routingComponents,
+    AsAdminComponent
   ],
   imports: [
     CommonModule,

@@ -1,68 +1,165 @@
 <p>as-student works!</p>
 
+<script>
+  class StickyNavigation {
+	
+	constructor() {
+		this.currentId = null;
+		this.currentTab = null;
+		this.tabContainerHeight = 70;
+		let self = this;
+		$(window).scroll(() => { this.onScroll(); });
+		$(window).resize(() => { this.onResize(); });
+	}
+	
+	onTabClick(event, element) {
+		event.preventDefault();
+		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		$('html, body').animate({ scrollTop: scrollTop }, 600);
+	}
+	
+	onScroll() {
+		this.checkTabContainerPosition();
+    this.findCurrentTabSelector();
+	}
+	
+	onResize() {
+		if(this.currentId) {
+			this.setSliderCss();
+		}
+	}
+	
+	
+	
+
+	setSliderCss() {
+		let width = 0;
+		let left = 0;
+		if(this.currentTab) {
+			width = this.currentTab.css('width');
+			left = this.currentTab.offset().left;
+		}
+		$('.et-hero-tab-slider').css('width', width);
+		$('.et-hero-tab-slider').css('left', left);
+	}
+	
+}
+
+new StickyNavigation();
+</script>
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.registerbtn:hover {
-  opacity: 1;
-}
-
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-
-</style>
-<button type="submit" class="registerbtn">Register</button>
 
 
 
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  
+  </style>
+
+  <main class="et-main">
+    <section class="et-slide" id="tab-es6">
+      <h3>
+
+        <div class="row">
+          <div class="col">
+            <h2> <b>Enrolled</b></h2>
+            <div class="tabs">
+              <div class="tab">
+                <input type="checkbox" id="Echck1">
+                <label class="tab-label" for="Echck1">Item 1</label>
+                <div class="tab-content">
+                  Course details
+                </div>
+                
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="Echck2">
+                <label class="tab-label" for="Echck2">Item 2</label>
+                <div class="tab-content">
+                 Course details
+                </div>
+        
+              </div>
+        
+            </div>
+          </div>
+        
+        </div>
+
+      </h3>
+    </section>
+    <section class="et-slide" id="tab-flexbox">
+      <h3>
+
+        <div class="row">
+          <div class="col">
+            <h2> <b>Available courses</b></h2>
+            <div class="tabs">
+              <div class="tab">
+                <input type="checkbox" id="chck1">
+                <label class="tab-label" for="chck1">Item 1</label>
+                <div class="tab-content">
+                  Course details
+                  <td>
+                    <button class="btn btn-danger" >
+                      Enroll
+                    </button>
+                  </td>
+                </div>
+                
+        
+                
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="chck2">
+                <label class="tab-label" for="chck2">Item 2</label>
+                <div class="tab-content">
+                 Course details
+                 <td>
+                  <button class="btn btn-danger" >
+                    Enroll
+                  </button>
+                </td>
+                </div>
+        
+              </div>
+        
+            </div>
+          </div>
+        
+        </div>
+
+      </h3>
+    </section>
+
+  </main>
+
+
+
+
+
+
+<!--
 <tbody>
 
   <tr *ngFor="let event of events">
@@ -79,3 +176,4 @@ a {
         Enroll
       </button>
     </td>
+-->

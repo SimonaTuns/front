@@ -4,6 +4,7 @@ import {CalendarComponent} from './calendar/calendar.component';
 import { AsStudentComponent } from './as-student/as-student.component';
 import { AsTeacherComponent } from './as-teacher/as-teacher.component';
 import { AsGuestComponent } from './as-guest/as-guest.component';
+import { AsAdminComponent } from './as-admin/as-admin.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'as-guest', component: AsGuestComponent
+  },
+    {
+    path: 'as-admin', component: AsAdminComponent
   }
 ];
 
@@ -25,4 +29,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [AsStudentComponent,AsGuestComponent,AsTeacherComponent]
+export const routingComponents = [AsStudentComponent,AsGuestComponent,AsTeacherComponent, AsAdminComponent]
