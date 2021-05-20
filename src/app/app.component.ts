@@ -1,4 +1,6 @@
 //import { Component } from '@angular/core';
+
+import {MatDialog} from '@angular/material/dialog';
 import {
   Component,
   ChangeDetectionStrategy,
@@ -123,7 +125,9 @@ export class AppComponent {
 
   activeDayIsOpen: boolean = true;
 
-  constructor(private modal: NgbModal) {}
+  constructor(private modal: NgbModal,
+  private matDialog: MatDialog
+  ) {}
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {
@@ -194,5 +198,6 @@ export class AppComponent {
  goToCalendar(cal: string){
    window.open(cal);
  }
+
   
 }

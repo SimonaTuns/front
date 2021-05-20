@@ -41,14 +41,17 @@ const colors: any = {
   },
 };
 
-@Component({
-  selector: 'app-as-teacher',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-   templateUrl: './as-teacher.component.html',
-  styleUrls: ['./as-teacher.component.scss']
 
+
+
+
+@Component({
+  selector: 'app-new-course',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './new-course.component.html',
+  styleUrls: ['./new-course.component.scss']
 })
-export class AsTeacherComponent implements OnInit {
+export class NewCourseComponent implements OnInit {
 
 
 ngOnInit(): void {};
@@ -129,8 +132,7 @@ ngOnInit(): void {};
 
   activeDayIsOpen: boolean = true;
 
-  constructor(private modal: NgbModal
-  ) {}
+  constructor(private modal: NgbModal) {}
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {

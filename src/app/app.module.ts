@@ -8,13 +8,15 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { HttpClientModule } from "@angular/common/http";
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
-
+import { MatSliderModule } from '@angular/material/slider';
+import {MatDialogModule} from '@angular/material/dialog';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { AsAdminComponent } from './as-admin/as-admin.component';
-
+import { NewCourseComponent } from './new-course/new-course.component';
+import { EditComponent } from './edit/edit.component';
 //import { NgbModal } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -22,9 +24,14 @@ import { AsAdminComponent } from './as-admin/as-admin.component';
     AppComponent,
     CalendarComponent,
     routingComponents,
-    AsAdminComponent
+    AsAdminComponent,
+   NewCourseComponent,
+   EditComponent,
+   // DialogComponent
   ],
   imports: [
+    MatSliderModule,
+    MatDialogModule,
     CommonModule,
     FormsModule,
     RouterModule,
@@ -37,6 +44,8 @@ import { AsAdminComponent } from './as-admin/as-admin.component';
     CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

@@ -5,6 +5,9 @@ import { AsStudentComponent } from './as-student/as-student.component';
 import { AsTeacherComponent } from './as-teacher/as-teacher.component';
 import { AsGuestComponent } from './as-guest/as-guest.component';
 import { AsAdminComponent } from './as-admin/as-admin.component';
+import { NewCourseComponent } from './new-course/new-course.component';
+import { EditComponent } from './edit/edit.component';
+
 
 
 const routes: Routes = [
@@ -20,6 +23,12 @@ const routes: Routes = [
   },
     {
     path: 'as-admin', component: AsAdminComponent
+  },
+     {
+    path: 'new-course', component: NewCourseComponent
+  },
+  {
+    path: 'edit', component: EditComponent
   }
 ];
 
@@ -29,4 +38,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [AsStudentComponent,AsGuestComponent,AsTeacherComponent, AsAdminComponent]
+export const routingComponents = [AsStudentComponent,AsGuestComponent,AsTeacherComponent, AsAdminComponent,
+ NewCourseComponent, EditComponent]

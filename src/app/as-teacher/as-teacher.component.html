@@ -4,6 +4,11 @@
   <button class="btn btn-primary float-right" (click)="addEvent()">
     New course
   </button>
+  <button routerLink="/new-course">Add </button> 
+  <button routerLink="/edit">Edit </button> 
+
+  <router-outlet></router-outlet>
+
   <div class="clearfix"></div>
 </h3>
 
@@ -21,36 +26,24 @@
 
     <tbody>
       <tr *ngFor="let event of events">
+
         <td>
-          <input type="text" id="details" name="details">
-        </td>
-        <!--<td>
           <input
             type="text"
-            class="form-control"
             [(ngModel)]="event.title"
             (keyup)="refresh.next()"
           />
-        </td> -->
-
-        <td>
-          <input type="text" id="details" name="details">
         </td>
 
-        <!--<td>
-          <input
-            type="text"
-            class="form-control"
-            [(ngModel)]="event.title"
-            (keyup)="refresh.next()"
-          />
-        </td> -->
-       
+        <td>
+            <input type="text" id="details" name="details">
+          </td>
       
         <td>
-          <input type="datetime-local" id="meeting-time"
-          name="meeting-time" value="2021-05-19T11:35">
-         <!-- <input
+            <input type="datetime-local" id="meeting-time"
+            name="meeting-time" value="2021-05-19T11:35">
+          <!--
+                        <input
             class="form-control"
             type="text"
             mwlFlatpickr
@@ -62,23 +55,25 @@
             dateFormat="Y-m-dTH:i"
             altFormat="F j, Y H:i"
             placeholder="Not set"
-          /> -->
+          />
+          -->
         </td>
+
         <td>
-          <input type="datetime-local" id="meeting-time"
-          name="meeting-time" value="2021-05-19T11:35">
-         <!-- <input
+            <input type="datetime-local" id="meeting-time"
+            name="meeting-time" value="2021-05-19T11:35">
+         <!--- <input
             class="form-control"
             type="text"
             mwlFlatpickr
-            [(ngModel)]="event.end"
+           [(ngModel)]="event.end"
             (ngModelChange)="refresh.next()"
             [altInput]="true"
             [convertModelValue]="true"
             [enableTime]="true"
             dateFormat="Y-m-dTH:i"
             altFormat="F j, Y H:i"
-            placeholder="Not set"
+            placeholder="Not set" 
           /> -->
         </td>
         <td>
