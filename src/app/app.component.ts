@@ -1,4 +1,6 @@
 //import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import 'flatpickr/dist/flatpickr.css';
 
 import {MatDialog} from '@angular/material/dialog';
 import {
@@ -6,6 +8,9 @@ import {
   ChangeDetectionStrategy,
   ViewChild,
   TemplateRef,
+  HostListener,
+  OnInit,
+  ViewEncapsulation
 } from '@angular/core';
 import {
   startOfDay,
@@ -43,13 +48,21 @@ const colors: any = {
 @Component({
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
-
+    template: `
+    <input 
+      type="text" 
+      mwlFlatpickr 
+      [(ngModel)]="selectedDate" 
+      [altInput]="true" 
+      [convertModelValue]="true">
+  `,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'hellos';
     @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
+
 
   view: CalendarView = CalendarView.Month;
 

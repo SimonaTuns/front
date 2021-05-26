@@ -1,3 +1,4 @@
+import 'flatpickr/dist/flatpickr.css';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -17,6 +18,9 @@ import { FlatpickrModule } from 'angularx-flatpickr';
 import { AsAdminComponent } from './as-admin/as-admin.component';
 import { NewCourseComponent } from './new-course/new-course.component';
 import { EditComponent } from './edit/edit.component';
+import flatpickr from "flatpickr";
+import 'flatpickr/dist/flatpickr.css';
+
 //import { NgbModal } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
