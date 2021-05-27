@@ -197,6 +197,8 @@ ngOnInit(): void {};
   closeOpenMonthViewDay() {
     this.activeDayIsOpen = false;
   }
+  
+
 }
 
 

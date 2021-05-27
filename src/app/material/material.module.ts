@@ -21,6 +21,16 @@ import * as Material from "@angular/material";
     Material.MatPaginatorModule,
     Material.MatSortModule,
     Material.MatDialogModule,
+    Material.MatTabsModule,
+    Material.MatTreeFlatDataSource,
+    Material.MatTreeFlattener,
+    Material.MatTree,
+    Material.MatExpansionModule,
+    Material.MatMenuModule,
+    Material.FormGroup, 
+    Material.FormControl, 
+    Material.FormsModule, 
+    Material.ReactiveFormsModule,
 
   ],
   exports: [
@@ -40,6 +50,16 @@ import * as Material from "@angular/material";
     Material.MatPaginatorModule,
     Material.MatSortModule,
     Material.MatDialogModule,
+    Material.MatTabsModule,
+    Material.MatTreeFlatDataSource,
+    Material.MatTreeFlattener,
+    Material.MatTree,
+    Material.MatExpansionModule
+    Material.MatMenuModule,
+       Material.FormGroup, 
+    Material.FormControl, 
+    Material.FormsModule, 
+    Material.ReactiveFormsModule,
 
   ],
   declarations: []

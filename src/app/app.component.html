@@ -7,6 +7,204 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 
+<mat-tab-group>
+  <mat-tab label="Home"></mat-tab>
+
+  <mat-tab label="Guest"> 
+  
+    <p>as-guest works!</p>
+    <p *ngFor="let event of events">
+      {{event.title}}
+    </p>
+  
+  </mat-tab>
+  <mat-tab label="Student"> 
+  
+    <p>as-student works!</p>
+
+    <mat-tab-group color="#CEF6F5" backgroundcolor="#CEF6F5">
+      <mat-tab label="Your Courses" > 
+        <p>no courses at the moment</p>
+
+  
+      </mat-tab>
+      <mat-tab label="All Courses"> 
+      
+        <p *ngFor="let event of events">
+          {{event.title}}
+        </p>
+        
+      </mat-tab>
+    </mat-tab-group>
+  
+  </mat-tab>
+  <mat-tab label="Teacher"> 
+  
+    <h3>
+      Edit events
+      <button class="btn btn-primary float-right" (click)="addEvent()">
+        Add new
+      </button>
+      <div class="clearfix"></div>
+    </h3>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Details</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr *ngFor="let event of events">
+            <td>
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="event.title"
+                (keyup)="refresh.next()"
+              />
+            </td>
+    
+    
+                    
+    
+            <td>
+              <input type="text" id="details" name="details">
+            </td>
+    
+            <td >
+              <input
+                class="form-control"
+                type="text"
+                mwlFlatpickr
+                [(ngModel)]="event.start"
+                (ngModelChange)="refresh.next()"
+                [altInput]="true"
+                [convertModelValue]="true"
+                [enableTime]="true"
+                dateFormat="Y-m-dTH:i"
+                altFormat="F j, Y H:i"
+                placeholder="Not set"
+              />
+            </td>
+            <td >
+              <input id = "datepicker"
+                class="form-control"
+                type="text"
+                mwlFlatpickr
+                [(ngModel)]="event.end"
+                (ngModelChange)="refresh.next()"
+                [altInput]="true"
+                [convertModelValue]="true"
+                [enableTime]="true"
+                dateFormat="Y-m-dTH:i"
+                altFormat="F j, Y H:i"
+                placeholder="Not set"
+              />
+            </td>
+            <td>
+              <button class="btn btn-danger" (click)="deleteEvent(event)">
+                Delete
+              </button>
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>
+    </div>
+  
+  </mat-tab>
+  <mat-tab label="Admin"> 
+  
+      
+    <h3>
+      Edit events
+      <button class="btn btn-primary float-right" (click)="addEvent()">
+        Add new
+      </button>
+      <div class="clearfix"></div>
+    </h3>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Details</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr *ngFor="let event of events">
+            <td>
+              <input
+                name="titlu"
+                type="text"
+                class="form-control"
+                [(ngModel)]="event.title"
+                (keyup)="refresh.next()"
+              />
+            </td>
+    
+    
+                    
+    
+            <td>
+              <input type="text" id="details" name="details">
+            </td>
+    
+            <td >
+              <input
+                class="form-control"
+                type="text"
+                mwlFlatpickr
+                [(ngModel)]="event.start"
+                (ngModelChange)="refresh.next()"
+                [altInput]="true"
+                [convertModelValue]="true"
+                [enableTime]="true"
+                dateFormat="Y-m-dTH:i"
+                altFormat="F j, Y H:i"
+                placeholder="Not set"
+              />
+            </td>
+            <td >
+              <input id = "datepicker"
+                class="form-control"
+                type="text"
+                mwlFlatpickr
+                [(ngModel)]="event.end"
+                (ngModelChange)="refresh.next()"
+                [altInput]="true"
+                [convertModelValue]="true"
+                [enableTime]="true"
+                dateFormat="Y-m-dTH:i"
+                altFormat="F j, Y H:i"
+                placeholder="Not set"
+              />
+            </td>
+            <td>
+              <button class="btn btn-danger" (click)="deleteEvent(event)">
+                Delete
+              </button>
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>
+    </div>
+  
+  </mat-tab>
+
+</mat-tab-group>
+
 <div class="row text-center">
   <div class="col-md-4">
     <div class="btn-group">
@@ -143,82 +341,3 @@
 
 
 
-
-
-<h3>
-  Edit events
-  <button class="btn btn-primary float-right" (click)="addEvent()">
-    Add new
-  </button>
-  <div class="clearfix"></div>
-</h3>
-<div class="table-responsive">
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Start</th>
-        <th>End</th>
-        <th>Remove</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr *ngFor="let event of events">
-        <td>
-          <input
-            type="text"
-            class="form-control"
-            [(ngModel)]="event.title"
-            (keyup)="refresh.next()"
-          />
-        </td>
-                
-
-    
-
-        <td >
-          <input
-            class="form-control"
-            type="text"
-            mwlFlatpickr
-            [(ngModel)]="event.start"
-            (ngModelChange)="refresh.next()"
-            [altInput]="true"
-            [convertModelValue]="true"
-            [enableTime]="true"
-            dateFormat="Y-m-dTH:i"
-            altFormat="F j, Y H:i"
-            placeholder="Not set"
-          />
-        </td>
-        <td >
-          <input id = "datepicker"
-            class="form-control"
-            type="text"
-            mwlFlatpickr
-            [(ngModel)]="event.end"
-            (ngModelChange)="refresh.next()"
-            [altInput]="true"
-            [convertModelValue]="true"
-            [enableTime]="true"
-            dateFormat="Y-m-dTH:i"
-            altFormat="F j, Y H:i"
-            placeholder="Not set"
-          />
-        </td>
-        <td>
-          <button class="btn btn-danger" (click)="deleteEvent(event)">
-            Delete
-          </button>
-        </td>
-      </tr>
-            
-      <script>
-
-      $('.calendario').flatpickr();
-      </script>
-      
-    </tbody>
-  </table>
-</div>

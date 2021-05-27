@@ -20,6 +20,9 @@ import { NewCourseComponent } from './new-course/new-course.component';
 import { EditComponent } from './edit/edit.component';
 import flatpickr from "flatpickr";
 import 'flatpickr/dist/flatpickr.css';
+import { MatTabsModule } from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatMenuModule} from '@angular/material/menu';
 
 //import { NgbModal } from '../../../node_modules/@ng-bootstrap/ng-bootstrap';
 
@@ -38,9 +41,11 @@ import 'flatpickr/dist/flatpickr.css';
     MatDialogModule,
     CommonModule,
     FormsModule,
+    MatMenuModule,
     RouterModule,
     NgbModalModule,
     BrowserModule,
+    MatTabsModule,
     FlatpickrModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,

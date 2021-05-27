@@ -1,6 +1,7 @@
 //import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import 'flatpickr/dist/flatpickr.css';
+import {MatMenuModule} from '@angular/material/menu';
 
 import {MatDialog} from '@angular/material/dialog';
 import {
@@ -60,6 +61,8 @@ const colors: any = {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+    selected = 'option2';
+
   title = 'hellos';
     @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
 
@@ -211,6 +214,8 @@ export class AppComponent {
  goToCalendar(cal: string){
    window.open(cal);
  }
+
+ 
 
   
 }
