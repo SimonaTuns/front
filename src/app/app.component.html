@@ -13,9 +13,25 @@
   <mat-tab label="Guest"> 
   
     <p>as-guest works!</p>
-    <p *ngFor="let event of events">
-      {{event.title}}
-    </p>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Title</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr *ngFor="let event of events">
+            <td>
+                {{event.title}}
+              
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>
+    </div>
   
   </mat-tab>
   <mat-tab label="Student"> 
@@ -29,11 +45,45 @@
   
       </mat-tab>
       <mat-tab label="All Courses"> 
-      
-        <p *ngFor="let event of events">
-          {{event.title}}
-        </p>
         
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Enroll</th>
+              </tr>
+            </thead>
+        
+            <tbody>
+              <tr *ngFor="let event of events">
+                <td>
+                    {{event.title}}
+                  
+                </td>
+        
+        
+                <td >
+                    {{event.start}}
+                </td>
+                <td >
+                  {{event.end}}
+                  
+                </td>
+                <td>
+                  <button mat-button color="primary">Enroll</button>
+                </td>
+              </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      
+
+
+
       </mat-tab>
     </mat-tab-group>
   
@@ -52,7 +102,6 @@
         <thead>
           <tr>
             <th>Title</th>
-            <th>Details</th>
             <th>Start</th>
             <th>End</th>
             <th>Remove</th>
@@ -62,20 +111,16 @@
         <tbody>
           <tr *ngFor="let event of events">
             <td>
+              <h2>{{event.title}}</h2>
               <input
                 type="text"
                 class="form-control"
                 [(ngModel)]="event.title"
                 (keyup)="refresh.next()"
               />
+              
             </td>
     
-    
-                    
-    
-            <td>
-              <input type="text" id="details" name="details">
-            </td>
     
             <td >
               <input
@@ -89,8 +134,9 @@
                 [enableTime]="true"
                 dateFormat="Y-m-dTH:i"
                 altFormat="F j, Y H:i"
-                placeholder="Not set"
+                placeholder="set"
               />
+              <p>{{event.start}}</p>
             </td>
             <td >
               <input id = "datepicker"
@@ -104,8 +150,9 @@
                 [enableTime]="true"
                 dateFormat="Y-m-dTH:i"
                 altFormat="F j, Y H:i"
-                placeholder="Not set"
+                placeholder="set"
               />
+              <p>{{event.end}}</p>
             </td>
             <td>
               <button class="btn btn-danger" (click)="deleteEvent(event)">
@@ -134,7 +181,6 @@
         <thead>
           <tr>
             <th>Title</th>
-            <th>Details</th>
             <th>Start</th>
             <th>End</th>
             <th>Remove</th>
@@ -152,14 +198,6 @@
                 (keyup)="refresh.next()"
               />
             </td>
-    
-    
-                    
-    
-            <td>
-              <input type="text" id="details" name="details">
-            </td>
-    
             <td >
               <input
                 class="form-control"
@@ -307,14 +345,14 @@
 <ng-template #modalContent let-close="close">
   <div class="modal-header">
     <h5 class="modal-title">
-      <nav>
+      <!-- <nav>
         <button routerLink="/as-student" >As Student</button>
         <button routerLink="/as-teacher">As Teacher</button>
         <button routerLink="/as-guest">As Guest</button> 
         <button routerLink="/as-admin">As Admin</button> 
 
 
-      </nav>
+      </nav>-->
        <!-- <p>text</p> -->
     </h5>
    <!-- <p>text</p> -->
