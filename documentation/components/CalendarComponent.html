@@ -1,0 +1,732 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>hellos documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">hellos documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CalendarComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/calendar/calendar.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-calendar</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./calendar.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./calendar.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dataService: <a href="../injectables/DataService.html">DataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/calendar/calendar.component.ts:10</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="14"
+                            class="link-to-prism">src/app/calendar/calendar.component.ts:14</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router, ActivatedRoute,ParamMap } from &#x27;@angular/router&#x27;;
+import { DataService } from &#x27;../data.service&#x27;;
+
+@Component({
+  selector: &#x27;app-calendar&#x27;,
+  templateUrl: &#x27;./calendar.component.html&#x27;,
+  styleUrls: [&#x27;./calendar.component.scss&#x27;]
+})
+export class CalendarComponent implements OnInit {
+  //calendar: any;
+
+constructor(private dataService: DataService) {}
+   ngOnInit() {
+        //this.dataService.get().subscribe((data)&#x3D;&gt;{
+          //console.log(data);
+          //this.calendar &#x3D; data[&#x27;calendar&#x27;];
+        //});
+      }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-12&quot;&gt;
+        &lt;div class&#x3D;&quot;row day-columns&quot;&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Monday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event gray&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;4 Assets&lt;/span&gt;
+                    &lt;span&gt;20:00&lt;/span&gt;
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event orange&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;3 Assets&lt;/span&gt;
+                    &lt;span&gt;21:30&lt;/span&gt;
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event red&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;4 tasks&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Tuesday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event purple&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;2 Tasks&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Wednesday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event yellow&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event navy&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event red&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;4 tasks&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Thursday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event purple&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event navy&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event orange&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event red&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;5 Tasks&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Friday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event purple&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event navy&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+               &lt;div class&#x3D;&quot;event yellow&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event navy&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event red&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event orange&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;7 Tasks&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Saturday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event purple&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event navy&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event red&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;4 Tasks&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;day-column&quot;&gt;
+            &lt;div class&#x3D;&quot;day-header&quot;&gt;Sunday&lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-content&quot;&gt;
+              &lt;div class&#x3D;&quot;event gray&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;event blue&quot;&gt;
+                  &lt;span class&#x3D;&quot;title&quot;&gt;Class Name&lt;/span&gt;
+                  &lt;footer&gt;
+                    &lt;span&gt;Prop1&lt;/span&gt;
+                    &lt;span&gt;time&lt;/span&gt;
+                    
+                  &lt;/footer&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;day-footer&quot;&gt;2 Tasks&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./calendar.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">// Colors are from https://codepen.io/tennowman/pen/EaarZe
+
+$border-color: #ebedf2;
+$title-color: #898b96;
+
+.green { background-color: #2ecc71; }
+.turquoise { background-color: #1abc9c; }
+.navy { background-color: #34495e; }
+.blue { background-color: #3498db; }
+.purple { background-color: #9b59b6; }
+.grey { background-color: #bdc3c7; color: #202020; }
+.gray { background-color: #7f8c8d; }
+.red { background-color: #e74c3c; }
+.orange { background-color: #f39c12; }
+.yellow { background-color: #f1c40f; color: #303030; }
+
+.day-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+  .day-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 400px;
+    min-width: 160px;
+    border: 1px solid $border-color;
+    border-left: none;
+    &amp;:first-child {
+      border-left: 1px solid $border-color;
+    }
+    .day-header {
+      border-bottom: 1px solid $border-color;
+      text-align: center;
+      padding: 5px;
+      color: $title-color;
+    }
+    .day-content {
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 5px;
+      overflow-y: auto;
+      .event {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        padding: 3px;
+        color: white;
+        padding: 5px;
+        box-shadow: 0px 1px 15px 1px rgba(81, 77, 92, 0.08);
+        .title {
+          font-size: 12px;
+        }
+        footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          font-size: 11px;
+        }
+      }
+    }
+    .day-footer {
+      border-top: 1px solid $border-color;
+      padding: 5px;
+      text-align: center;
+      font-size: 13px;
+      color: darken($title-color, 20%);
+    }
+  }
+}
+
+.container {
+  margin-top: 20px;
+  // border: 1px solid $border-color;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container">    <div class="row">      <div class="col-12">        <div class="row day-columns">          <div class="day-column">            <div class="day-header">Monday</div>            <div class="day-content">              <div class="event gray">                  <span class="title">Class Name</span>                  <footer>                    <span>4 Assets</span>                    <span>20:00</span>                  </footer>              </div>              <div class="event orange">                  <span class="title">Class Name</span>                  <footer>                    <span>3 Assets</span>                    <span>21:30</span>                  </footer>              </div>              <div class="event red">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                  </footer>              </div>              <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                  </footer>              </div>            </div>            <div class="day-footer">4 tasks</div>          </div>          <div class="day-column">            <div class="day-header">Tuesday</div>            <div class="day-content">              <div class="event purple">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>                            <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>            </div>            <div class="day-footer">2 Tasks</div>          </div>          <div class="day-column">            <div class="day-header">Wednesday</div>            <div class="day-content">              <div class="event yellow">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event navy">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event red">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>            </div>            <div class="day-footer">4 tasks</div>          </div>          <div class="day-column">            <div class="day-header">Thursday</div>            <div class="day-content">              <div class="event purple">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event navy">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event orange">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event red">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>            </div>            <div class="day-footer">5 Tasks</div>          </div>          <div class="day-column">            <div class="day-header">Friday</div>            <div class="day-content">              <div class="event purple">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event navy">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>               <div class="event yellow">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event navy">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event red">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event orange">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>            </div>            <div class="day-footer">7 Tasks</div>          </div>          <div class="day-column">            <div class="day-header">Saturday</div>            <div class="day-content">              <div class="event purple">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event navy">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event red">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>            </div>            <div class="day-footer">4 Tasks</div>          </div>          <div class="day-column">            <div class="day-header">Sunday</div>            <div class="day-content">              <div class="event gray">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>              <div class="event blue">                  <span class="title">Class Name</span>                  <footer>                    <span>Prop1</span>                    <span>time</span>                                      </footer>              </div>            </div>            <div class="day-footer">2 Tasks</div>          </div>        </div>      </div>    </div>  </div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsAdminComponent', 'selector': 'app-as-admin'},{'name': 'AsGuestComponent', 'selector': 'app-as-guest'},{'name': 'AsStudentComponent', 'selector': 'app-as-student'},{'name': 'AsTeacherComponent', 'selector': 'app-as-teacher'},{'name': 'CalendarComponent', 'selector': 'app-calendar'},{'name': 'EditComponent', 'selector': 'app-edit'},{'name': 'NewCourseComponent', 'selector': 'app-new-course'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CalendarComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CalendarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
